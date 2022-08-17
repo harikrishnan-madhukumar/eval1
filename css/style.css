@@ -1,0 +1,126 @@
+*{
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background: rgb(169, 235, 232);
+    margin: 0 0 0 0;
+}
+
+.container{
+   /*
+    padding-left: 5%;
+    padding-right: 5%;
+    */
+}
+
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(12, 32, 22);
+    
+    
+    
+}
+
+.logo{
+    width: 50px;
+    cursor: pointer;
+    transform: translate(10px);
+    border-radius: 10px;
+    
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+    gap: 5rem;
+    
+    
+}
+ul li{
+    display: inline;
+    padding: 30px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.column{
+    flex-basis: 70%;
+    transform: translateX(30px);
+}
+
+.section{
+    margin-top: 25%;
+}
+
+.column{
+    margin-top: 20%;
+}
+
+.column h1{
+    font-size: 70px;
+}
+
+.column p{
+    font-size: 18px;
+    line-height: 20px;
+}
+
+/*Book Now*/
+button{
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 15px 0 ;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+     margin-top: 30px;
+     cursor: pointer;
+     margin-bottom: 100px;
+     margin-left: 10px;
+     
+    
+}
+
+/*logo txt*/
+.sp1{
+    transform: translateX(20px);
+    
+}
+
+.bg_img{
+    background-image: url(img2.jpg);
+    color: #fff;
+}
+
+/*Cards*/
+
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-image: url(img3.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-left: 30px;
+}
+
