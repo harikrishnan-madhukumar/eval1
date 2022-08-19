@@ -1,0 +1,14 @@
+body{
+    background-image: url(../images/img4.png);
+}
+
+.container_1{
+ 
+    margin: 10% 30% 20% 30%;
+    background-color: rgb(196, 202, 199);
+    padding: 15px;
+    border-radius: 30px;
+    opacity: 0.9;
+    
+}
+

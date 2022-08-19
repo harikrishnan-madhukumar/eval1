@@ -3,15 +3,21 @@
     list-style: none;
 }
 body{
-    background: rgb(169, 235, 232);
-    margin: 0 0 0 0;
-}
+    /* background: rgb(169, 235, 232); */
+    padding: 0;
+    margin: auto;
+    background: rgb(210, 207, 207);
+    width: 100%;
+    background-image: url(/images/img2.png);
+    background-size: auto;
+    background-attachment: fixed;
+}   
 
 .container{
-   /*
-    padding-left: 5%;
-    padding-right: 5%;
-    */
+
+    /* width: 100%; */
+    
+    
 }
 
 .navbar{
@@ -19,6 +25,9 @@ body{
     display: flex;
     align-items: center;
     background-color: rgb(12, 32, 22);
+    position: sticky ;
+    top: 0px;
+    
     
     
     
@@ -104,10 +113,14 @@ button{
 
 .bg_img{
     background-image: url(img2.jpg);
-    color: #fff;
+    color: black;
+    background-size: auto;
+    background-attachment: fixed;
+ 
 }
 
-/*Cards*/
+
+/*Cards
 
 .card{
     width: 200px;
@@ -123,4 +136,17 @@ button{
     background-size: cover;
     margin-left: 30px;
 }
+*/
 
+.card {
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 30px;
+    margin-left: 90px;
+    margin-top: 30px;
+}
+
+html {
+    background-color: bisque;
+}
