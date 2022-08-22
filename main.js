@@ -94,7 +94,8 @@ f_details.then(response=>response.json()).then(data=>{
         book.className = "btn btn-primary";
         book.innerHTML = "Book";
         book.style.color = "white";
-
+        book.setAttribute('id',obj.id);
+        book.setAttribute('onClick','openpage(this.id)');
 
 
         container.appendChild(hd);
@@ -112,12 +113,18 @@ f_details.then(response=>response.json()).then(data=>{
 
 
 
-
-
     }
 
 
 });
+
+function openpage(id)
+{
+    console.log(id);
+    var flnum = id;
+    localStorage.setItem("flid", flnum);
+    window.location.href = "form_1.html";
+}
 
 
 /*
