@@ -31,6 +31,7 @@ phoneno.addEventListener('input',validatephoneNo)
 
 
 
+
 function passvalues()
         {
             var fname=document.getElementById("firstName").value;
@@ -41,8 +42,19 @@ function passvalues()
             localStorage.setItem("textvalue2",a);
             var e=document.getElementById("email").value;
             localStorage.setItem("textvalue3",e);
+
+            localStorage.setItem("flag",0);
+
+            var radios = document.getElementsByName('gender');
+            for (var radio of radios)
+            {
+                if (radio.checked) {
+                    localStorage.setItem("gend",radio.value); 
+                }
+            }
             return false;
         }
+        
 
 
 
@@ -194,4 +206,42 @@ function valid(element){
     element.style.borderColor = "black";
     element.style.borderWidth = "thin thin";
 
+}
+
+/*Final Submit */
+
+let fName1 = document.getElementById('firstName1');
+let lName1 = document.getElementById('lastName1');
+let age1 = document.getElementById('age1');
+
+function finalSubmit(){
+    passvalues();
+
+    var fname1 = fName1.value;
+    localStorage.setItem("firstName1",fname1);
+    var lname1 = lName1.value;
+    localStorage.setItem("lastName1",lname1);
+    var a1 = age1.value;
+    localStorage.setItem("age1",fname1);
+
+    localStorage.setItem("flag",1);
+
+    window.location.href="confirmation.html";
+
+
+
+}
+
+
+
+
+function text(){
+    // localStorage.setItem("flag",1);
+    document.getElementById("addpass").style.display = "block";
+    document.getElementById("addpass1").style.display = "block";
+    document.getElementById("addpass2").style.display = "block";
+    document.getElementById("addpass3").style.display = "block";
+    document.getElementById("inner2").style.display = "block";
+    
+    
 }

@@ -6,12 +6,14 @@ body{
     /* background: rgb(169, 235, 232); */
     padding: 0;
     margin: auto;
+    
     background: rgb(210, 207, 207);
     width: 100%;
     background-image: url(/images/img2.jpg);
     background-size: auto;
     background-attachment: fixed;
-    margin-top: 5px;
+    /* margin-top: 5px; */
+    margin-bottom: 0px;
 }   
 
 .container{
@@ -20,12 +22,17 @@ body{
     
     
 }
+h1{
+    font-weight: bold;
+}
 
 .c1{
     margin-right: 20%;
     margin-top: 5%;
     margin-left: 4%;
     margin-bottom: 6%;
+    font-family:verdana;
+    /* font-weight: bold; */
 }
 
 .navbar{
@@ -50,6 +57,7 @@ body{
 }
 
 nav{
+    
     flex: 1;
     text-align: right;
     gap: 5rem;
@@ -60,11 +68,17 @@ ul li{
     display: inline;
     padding: 30px;
     
+    
 }
 
 nav ul li a{
     text-decoration: none;
     color: white;
+    
+}
+
+ul{
+    margin-top: 10px;
 }
 
 .row{
@@ -85,9 +99,7 @@ nav ul li a{
     
 }
 
-.section{
-    margin-top: 25%;
-}
+
 
 .column{
     margin-top: 40%;
@@ -102,6 +114,56 @@ nav ul li a{
     font-size: 18px;
     line-height: 20px;
 }
+
+.section{
+    margin-top: 25%;
+    
+}
+#sec1:hover{
+    background-color: #fff;
+    opacity: 0.8;
+}
+#sec2:hover{
+    background-color: #fff;
+    opacity: 0.8;
+}
+#sec3:hover{
+    background-color: #fff;
+    opacity: 0.8;
+}
+
+#sec1{
+    padding-top: 70px;
+    padding-bottom: 150px;
+    padding-left: 30px;
+    padding-right: 30px;
+    /* background-color: antiquewhite; */
+    /* opacity: 0.9; */
+    border-radius: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+#sec2{
+    padding-top: 100px;
+    padding-bottom: 120px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 30px;
+}
+#sec3{
+    padding-top: 80px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 30px;
+    
+}
+
 
 /*Book Now*/
 button{
@@ -163,6 +225,7 @@ button{
     margin-left: 90px;
     margin-top: 30px;
     opacity: 0.7;
+    
 }
 
 html {
