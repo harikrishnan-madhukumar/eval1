@@ -143,7 +143,7 @@ function validateAge(){
     console.log(age);
 
     var a = age.value;
-    // /^0?1[89]|0?[2-9][0-9]$/
+    
     if(a.match(/^(?:1[01][0-9]|120|1[7-9]|[2-9][0-9])$/)){
         
 
@@ -202,6 +202,8 @@ function valid(element){
 
 function passvalues()
         {
+            // Fetching data from local storage
+
             var fname=document.getElementById("firstName").value;
             localStorage.setItem("textvalue",fname); 
             var lname=document.getElementById("lastName").value;
@@ -237,6 +239,8 @@ let age1 = document.getElementById('age1');
 function finalSubmit(){
     passvalues();
 
+    // Fetching data from local storage
+
     var fname1 = fName1.value;
     localStorage.setItem("firstName1",fname1);
     var lname1 = lName1.value;
@@ -269,7 +273,7 @@ function finalSubmit(){
 
 
 function text(){
-    // localStorage.setItem("flag",1);
+    
     document.getElementById("addpass").style.display = "block";
     document.getElementById("addpass1").style.display = "block";
     document.getElementById("addpass2").style.display = "block";
