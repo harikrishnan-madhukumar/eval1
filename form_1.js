@@ -200,7 +200,7 @@ function valid(element){
 
 // Initial Submit
 
-function passvalues()
+function submit_1()
         {
             // Fetching data from local storage
 
@@ -237,7 +237,7 @@ let age1 = document.getElementById('age1');
 
 
 function finalSubmit(){
-    passvalues();
+    submit_1();
 
     // Fetching data from local storage
 
