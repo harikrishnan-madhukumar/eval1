@@ -1,10 +1,10 @@
 let flight_id=localStorage.getItem("flid");
-let val=localStorage.getItem("textvalue");
-let val1=localStorage.getItem("textvalue1");
-let val2=localStorage.getItem("textvalue2");
-let val3=localStorage.getItem("textvalue3");
-let val4=localStorage.getItem("gend");
-let val5=localStorage.getItem("textvalue5");
+let fn2=localStorage.getItem("firstName2");
+let ln2=localStorage.getItem("lastName2");
+let ag2=localStorage.getItem("age2");
+let em2=localStorage.getItem("email2");
+let gen2=localStorage.getItem("gend");
+let ph2=localStorage.getItem("phoneNo2");
 
 let flag = localStorage.getItem("flag");
 
@@ -20,8 +20,8 @@ flight_id-=1;
 
 
 console.log(flight_id);
-console.log(val);
-console.log(val1);
+console.log(fn2);
+console.log(ln2);
 
 
 let content='';
@@ -50,11 +50,11 @@ function display_value(data)
             
         </div>
         <div class="b">
-        <h3> Passenger name: ${val} ${val1}</h3>
-        <h3>Age: ${val2}</h3>
-        <h3>Email: ${val3}</h3>
-        <h3>Gender: ${val4}</h3>
-        <h3>Phone No: ${val5}</h3><br>
+        <h3> Passenger name: ${fn2} ${ln2}</h3>
+        <h3>Age: ${ag2}</h3>
+        <h3>Email: ${em2}</h3>
+        <h3>Gender: ${gen2}</h3>
+        <h3>Phone No: ${ph2}</h3><br>
         </div>
         
         </div>
@@ -100,11 +100,11 @@ function display_value2(data){
         </div>
         <div class="b">
         <h3><u> Passenger 1 </u></h3>
-        <h3> Passenger name: ${val} ${val1}</h3>
-        <h3>Age: ${val2}</h3>
-        <h3>Email: ${val3}</h3>
-        <h3>Gender: ${val4}</h3>
-        <h3>Phone No: ${val5}</h3><br>
+        <h3> Passenger name: ${fn2} ${ln2}</h3>
+        <h3>Age: ${ag2}</h3>
+        <h3>Email: ${em2}</h3>
+        <h3>Gender: ${gen2}</h3>
+        <h3>Phone No: ${ph2}</h3><br>
 
 
         <h3><u> Passenger 2 </u></h3>

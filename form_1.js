@@ -205,15 +205,15 @@ function passvalues()
             // Fetching data from local storage
 
             var fname=document.getElementById("firstName").value;
-            localStorage.setItem("textvalue",fname); 
+            localStorage.setItem("firstName2",fname); 
             var lname=document.getElementById("lastName").value;
-            localStorage.setItem("textvalue1",lname);
+            localStorage.setItem("lastName2",lname);
             var a=document.getElementById("age").value;
-            localStorage.setItem("textvalue2",a);
+            localStorage.setItem("age2",a);
             var e=document.getElementById("email").value;
-            localStorage.setItem("textvalue3",e);
+            localStorage.setItem("email2",e);
             var ph=document.getElementById("phoneNo").value;
-            localStorage.setItem("textvalue5",ph);
+            localStorage.setItem("phoneNo2",ph);
 
             localStorage.setItem("flag",0);
 
