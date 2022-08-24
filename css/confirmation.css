@@ -1,24 +1,24 @@
 body{
     background-image: url(../images/img7.jpg);
+    background-attachment: fixed;
 }
 
 .cont{
     background-color: aliceblue;
     opacity: 0.8;
-    /* margin: 1% 30% 20% 30%; */
+    
 
     margin: 30px 500px 300px 500px;
    
     padding: 4%;
     border-radius: 30px;
-    /* display: flex;
-    display: inline-block; */
+    
     align-items: center;
 }
 
 h2{
     text-align: center;
-    padding-top: 10%;
+    padding-top: 5%;
 }
 
 .b{
@@ -32,4 +32,8 @@ h2{
 
 .details{
     display: flex;
+}
+
+button{
+    margin-left: 88%;
 }

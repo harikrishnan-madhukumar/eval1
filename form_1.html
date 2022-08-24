@@ -24,7 +24,7 @@
 </head>
 
 
-
+<!--First Passenger-->
 <body>
     <div class="container_1">
         <div class="inner_1">
@@ -44,29 +44,6 @@
                 </div>
 
 
-                <!-- <div class="mb-3">
-            <label for="lastName" class="form-label">Last Name</label> 
-            <p id="ln"></p>
-            <input type="text" class="form-control" id="lastName" required>
-        </div> -->
-
-
-
-
-                <!-- <div class="row g-3">
-            <div class="col-md-4">
-                <label for="validationDefault01" class="form-label">First name</label>
-                <input type="text" class="form-control" id="firstName" value="" required>
-            </div>
-            <div class="col-md-4">
-                
-                <label for="validationDefault02" class="form-label">Last name</label>
-                <input type="text" class="form-control" id="lastName" value="" required>
-                
-                
-
-            </div>
-        </div> -->
 
                 <div class="mb-3">
                     <label for="age" class="form-label">Age</label>
@@ -77,15 +54,15 @@
                 <div class="radio-box">
                     <label for="gender" class="form-label">Gender</label><br>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" id="male" value="male" name="gender" required>
+                        <input class="form-check-input" type="radio" id="male" value="Male" name="gender" required>
                         <label class="form-check-label" for="male">Male</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" id="female" value="female" name="gender">
+                        <input class="form-check-input" type="radio" id="female" value="Memale" name="gender">
                         <label class="form-check-label" for="female">Female</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" id="other" value="other" name="gender">
+                        <input class="form-check-input" type="radio" id="other" value="Other" name="gender">
                         <label class="form-check-label" for="other">Other</label>
                     </div>
                 </div>
@@ -106,7 +83,7 @@
 
 
 
-                <!--Add Passenger-->
+                
 
 
                 <button type="submit" class="btn btn-outline-primary" id="submit" onclick="passvalues()">SUBMIT</button>
@@ -117,53 +94,53 @@
             </form>
         </div>
 
-
+        <!--Add Passenger-->
 
         <div class="inner-2" id="inner2" style="display: none;">
             <form action="confirmation.html">
-                <div class="input-group">
+                
                     <div class="mb-3" id="addpass" style="display: none;">
                         <label for="firstName" class="form-label">First Name</label>
                         <input type="text" class="form-control" id="firstName1" required>
                         <p id="fn1"></p>
                     </div>
-                </div>
+                
 
-                <div class="input-group">
+                
                     <div class="mb-3" id="addpass1" style="display: none;">
                         <label for="lastName" class="form-label">Last Name</label>
                         <input type="text" class="form-control" id="lastName1" required>
                         <p id="ln1"></p>
                     </div>
-                </div>
+                
 
-                <div class="input-group" id="addpass2" style="display: none;">
-                    <div class="mb-3">
+                
+                    <div class="mb-3" id="addpass2" style="display: none";>
                         <label for="age" class="form-label">Age</label>
                         <input type="text" class="form-control" id="age1" required>
                         <p id="ag1"></p>
                     </div>
-                </div>
+                
 
                 <div class="input-group" id="addpass3" style="display: none;">
                     <div class="radio-box">
                         <label for="gender" class="form-label">Gender</label><br>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" id="male" value="male" name="gender" required>
+                            <input class="form-check-input" type="radio" id="male1" value="Male" name="gender1" required>
                             <label class="form-check-label" for="male">Male</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" id="female" value="female" name="gender">
+                            <input class="form-check-input" type="radio" id="female1" value="Female" name="gender1">
                             <label class="form-check-label" for="female">Female</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" id="other" value="other" name="gender">
+                            <input class="form-check-input" type="radio" id="other1" value="Other" name="gender1">
                             <label class="form-check-label" for="other">Other</label>
                         </div>
                     </div>
                 </div>
 
-                <button type="submit" class="btn btn-outline-primary" id="submit-2" onclick="return finalSubmit()">SUBMIT</button>
+                <button type="submit" class="btn btn-outline-primary" id="submit2" onclick="return finalSubmit()">SUBMIT</button>
 
             </form>
 

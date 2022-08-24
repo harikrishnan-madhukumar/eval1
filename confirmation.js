@@ -4,12 +4,14 @@ let val1=localStorage.getItem("textvalue1");
 let val2=localStorage.getItem("textvalue2");
 let val3=localStorage.getItem("textvalue3");
 let val4=localStorage.getItem("gend");
+let val5=localStorage.getItem("textvalue5");
 
 let flag = localStorage.getItem("flag");
 
 let fn1 = localStorage.getItem("firstName1");
 let ln1 = localStorage.getItem("lastName1");
 let ag1 = localStorage.getItem("age1");
+let gen1 = localStorage.getItem("gend1");
 /*final submit */
 
 
@@ -52,10 +54,11 @@ function display_value(data)
         <h3>Age: ${val2}</h3>
         <h3>Email: ${val3}</h3>
         <h3>Gender: ${val4}</h3>
+        <h3>Phone No: ${val5}</h3><br>
         </div>
-
+        
         </div>
-    
+        <button type="button" class="btn btn-danger" onclick="window.location.href='index.html'">Home</button>
 
 `
 
@@ -92,20 +95,26 @@ function display_value2(data){
             
             <h3>Arrival: <span>${arrival.toUTCString()} </span></h3>
             
-            <h3>Price: <span> &#8377;${data[flight_id].price}</h3>
+            <h3>Price: <span> &#8377;${data[flight_id].price*2}</h3>
             
         </div>
         <div class="b">
+        <h3><u> Passenger 1 </u></h3>
         <h3> Passenger name: ${val} ${val1}</h3>
         <h3>Age: ${val2}</h3>
         <h3>Email: ${val3}</h3>
         <h3>Gender: ${val4}</h3>
+        <h3>Phone No: ${val5}</h3><br>
 
+
+        <h3><u> Passenger 2 </u></h3>
         <h3> Passenger name: ${fn1} ${ln1}</h3>
         <h3>Age: ${ag1}</h3>
+        <h3>Gender: ${gen1}</h3>
         </div>
-
+        
         </div>
+        <button type="button" class="btn btn-danger" onclick="window.location.href='index.html'">Home</button>
     
 
 `

@@ -32,52 +32,40 @@ phoneno.addEventListener('input',validatephoneNo)
 
 
 
-function passvalues()
-        {
-            var fname=document.getElementById("firstName").value;
-            localStorage.setItem("textvalue",fname); 
-            var lname=document.getElementById("lastName").value;
-            localStorage.setItem("textvalue1",lname);
-            var a=document.getElementById("age").value;
-            localStorage.setItem("textvalue2",a);
-            var e=document.getElementById("email").value;
-            localStorage.setItem("textvalue3",e);
 
-            localStorage.setItem("flag",0);
-
-            var radios = document.getElementsByName('gender');
-            for (var radio of radios)
-            {
-                if (radio.checked) {
-                    localStorage.setItem("gend",radio.value); 
-                }
-            }
-            return false;
-        }
         
 
 
 
 submit.disabled = true;
+submit2.disabled = true;
+
+
 
 function btnRelease(){
 
     console.log("Entered Button release fn");
 
-    if(inputValidator.firstName === true && inputValidator.lastName === true && inputValidator.passengerAge === true && inputValidator.emailId === true && inputValidator.phoneNumber === true){
+    if(inputValidator.firstName == true && inputValidator.lastName == true && inputValidator.passengerAge == true && inputValidator.emailId == true && inputValidator.phoneNumber == true){
     
         
+        
         submit.removeAttribute('disabled');
+        submit2.removeAttribute('disabled');
         console.log("Submit button");
 
     }
     else{
-        submit.disabled = 'true'
+        submit.disabled = 'true';
+        submit2.disabled = 'true';
+        
         console.log('Submit button not active');
     }
 }
 
 
+
+// Validation Functions
 
 
 function validatefName(){
@@ -99,7 +87,7 @@ function validatefName(){
     }
     else{
         invalid(fName);
-        fn.innerHTML = '<i class="uil uil-times-circle"></i>';
+        fn.innerHTML = '<i class="uil uil-times-circle"></i>Invalid First Name';
         inputValidator.firstName = false;
     }
 }
@@ -123,7 +111,7 @@ function validatelName(){
     else{
    
         invalid(lName);
-        ln.innerHTML = '<i class="uil uil-times-circle"></i>';
+        ln.innerHTML = '<i class="uil uil-times-circle"></i>Invalid First Name';
         inputValidator.lastName = false;
         
         
@@ -146,7 +134,7 @@ function validateEmail(){
     }
     else{
         invalid(email);
-        em.innerHTML = '<i class="uil uil-times-circle"></i>';
+        em.innerHTML = '<i class="uil uil-times-circle"></i>Invalid Email';
         inputValidator.emailId = false;
     }
 }
@@ -155,8 +143,9 @@ function validateAge(){
     console.log(age);
 
     var a = age.value;
-
-    if(a.match(/^0?1[89]|0?[2-9][0-9]$/)){
+    // /^0?1[89]|0?[2-9][0-9]$/
+    if(a.match(/^(?:1[01][0-9]|120|1[7-9]|[2-9][0-9])$/)){
+        
 
         valid(age);
         ag.innerHTML = '<i class="uil uil-check-circle"></i>';
@@ -167,7 +156,7 @@ function validateAge(){
     else{
      
         invalid(age);
-        ag.innerHTML = '<i class="uil uil-times-circle"></i>';
+        ag.innerHTML = '<i class="uil uil-times-circle"></i>Invalid Age';
         inputValidator.passengerAge = false;
     }
     
@@ -187,7 +176,7 @@ function validatephoneNo(){
     }
     else{
         invalid(phoneno);
-        ph.innerHTML = '<i class="uil uil-times-circle"></i>';
+        ph.innerHTML = '<i class="uil uil-times-circle"></i>Invalid Phone Number';
         inputValidator.phoneNumber = false;
        
 }
@@ -208,11 +197,42 @@ function valid(element){
 
 }
 
+
+// Initial Submit
+
+function passvalues()
+        {
+            var fname=document.getElementById("firstName").value;
+            localStorage.setItem("textvalue",fname); 
+            var lname=document.getElementById("lastName").value;
+            localStorage.setItem("textvalue1",lname);
+            var a=document.getElementById("age").value;
+            localStorage.setItem("textvalue2",a);
+            var e=document.getElementById("email").value;
+            localStorage.setItem("textvalue3",e);
+            var ph=document.getElementById("phoneNo").value;
+            localStorage.setItem("textvalue5",ph);
+
+            localStorage.setItem("flag",0);
+
+            var radios = document.getElementsByName('gender');
+            for (var radio of radios)
+            {
+                if (radio.checked) {
+                    localStorage.setItem("gend",radio.value); 
+                }
+            }
+            return false;
+        }
+
+
+
 /*Final Submit */
 
 let fName1 = document.getElementById('firstName1');
 let lName1 = document.getElementById('lastName1');
 let age1 = document.getElementById('age1');
+
 
 function finalSubmit(){
     passvalues();
@@ -222,7 +242,18 @@ function finalSubmit(){
     var lname1 = lName1.value;
     localStorage.setItem("lastName1",lname1);
     var a1 = age1.value;
-    localStorage.setItem("age1",fname1);
+    localStorage.setItem("age1",a1);
+
+    var radios = document.getElementsByName('gender1');
+            for (var radio of radios)
+            {
+                if (radio.checked) {
+                    console.log(radio.value);
+                    localStorage.setItem("gend1",radio.value); 
+                    break;
+                }
+            }
+    
 
     localStorage.setItem("flag",1);
 
@@ -235,6 +266,8 @@ function finalSubmit(){
 
 
 
+
+
 function text(){
     // localStorage.setItem("flag",1);
     document.getElementById("addpass").style.display = "block";
@@ -242,6 +275,9 @@ function text(){
     document.getElementById("addpass2").style.display = "block";
     document.getElementById("addpass3").style.display = "block";
     document.getElementById("inner2").style.display = "block";
+
+
+    document.getElementById('submit').style.display = "none";
     
     
 }
